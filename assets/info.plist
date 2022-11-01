@@ -271,11 +271,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching results...</string>
 				<key>script</key>
-				<string>if [ -z "$GITHUB_ACCESS_TOKEN" ]; then
-  echo '{"items":[{"title":"You need to log in first","subtitle":"Hit Enter to generate a new personal access token","arg":"unauthorized"}]}'
-else
-  apps/cli user-repos $1
-fi</string>
+				<string>envchain alfred-github-repos apps/cli user-repos $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
